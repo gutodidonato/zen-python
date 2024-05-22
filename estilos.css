@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+body{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li{
+    color: white;
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide 105s infinite;
+    animation-timing-function: steps(21);
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.wrapper{
+    overflow: hidden;
+    min-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.texto-fixo{
+    height: 200px;
+    width: 100%;
+    z-index: 2;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto-fixo p{
+    color: white;
+}
+
+.texto-dinamico{
+    height: 60px;
+    z-index: 1;
+    background-color: rgb(53, 53, 53);
+    overflow: hidden;
+}
+
+li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 120%;
+    border-left: 2px solid yellow;
+    animation: typing 5s infinite;
+    animation-timing-function: steps(22);
+    background-color:  rgb(53, 53, 53);
+}
+
+
+@keyframes typing {
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+    left: 0;
+    }
+}
+
+@keyframes slide {
+    100%{
+        top: -1400px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    
+li{
+    color: white;
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide 110s infinite;
+    animation-timing-function: steps(22);
+    font-size: 14px;
+    letter-spacing: 0px;
+    margin: 10px 0;
+    font-family: "Lobster", sans-serif;
+}
+
+.wrapper{
+    overflow: hidden;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto-dinamico{
+    height: 35px;
+    z-index: 1;
+}
+
+@keyframes slide {
+    100%{
+        top: -835px;
+    }
+}
+    
+}
