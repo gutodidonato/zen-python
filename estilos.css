@@ -22,6 +22,9 @@ h1 {
     text-shadow: 1px 1px black;
     font-family: "Poetsen One", sans-serif;
 }
+span{
+    font-size: 40px;
+}
 .python-rotativo{
     transform-style: preserve-3d;
     width: 2px;
@@ -170,12 +173,103 @@ li::after{
 }
 
 
+.troca1{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 1s;
+}
+.troca2{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 1.2s;
+}
+.troca3{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 1.4s;
+}
+.troca4{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 1.6s;
+}
+.troca5{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 1.8s;
+}
+.troca6{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 2.0s;
+}
+.troca7{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 2.2s;
+}
+.troca8{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 2.4s;
+}
+.troca9{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 2.6s;
+}
+.troca10{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 2.8s;
+}
+.troca11{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 3s;
+}
+.troca12{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 3.2s;
+}
+.troca13{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 3.4s;
+}
+.troca14{
+    animation: trocaDeCores 8s infinite;
+    animation-delay: 3.6s;
+}
+
+
+
+
+
 @keyframes trocaDeCores{
     0%{
-
+        color: #3676aa;
+        font-size: 40px;
     }
     10%{
-        
+        color: #36aa97;
+        font-size: 45px;
+    }
+    20%{
+        color: #3aaa36;
+    }
+    30%{
+        color: #a2aa36;
+    }
+    40%{
+        color: #aa6a36;
+    }
+    50%{
+        color: #aa3636;
+    }
+    60%{
+        color: #aa3659;
+    }
+    70%{
+        color: #aa3691;
+    }
+    80%{
+        color: #5936aa;
+    }
+    90%{
+        color: #3664aa;
+    }
+    100%{
+        color: #3676aa;
+        font-size: 40px;
     }
 }
 

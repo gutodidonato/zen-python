@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>The Zen of Python</h1>
+    <h1><span class="troca1">T</span><span class="troca2">h</span><span class="troca3">e</span>&nbsp;<span class="troca4">Z</span><span class="troca5">e</span><span class="troca6">n</span> <span class="troca7">o</span><span class="troca8">f</span> <span class="troca9">P</span><span class="troca10">y</span><span class="troca11">t</span><span class="troca12">h</span><span class="troca13">o</span><span class="troca14">n</span></h1>
     <div class="wrapper">
         <div class="texto-fixo">
             <div class="python-rotativo">
@@ -76,6 +76,7 @@
             body.addEventListener('mouseenter', () => {
                 if (audio.paused) {
                     audio.play();
+                    audio.volume= 0.1;
                 }
             });
         
