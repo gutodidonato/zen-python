@@ -71,10 +71,20 @@
       <script>
         document.addEventListener("DOMContentLoaded", () => {
             const audio = document.querySelector('audio');
-            audio.volume= 0.1
-            audio.play()
-
-          });
+            const body = document.querySelector('body');
+        
+            body.addEventListener('mouseenter', () => {
+                if (audio.paused) {
+                    audio.play();
+                }
+            });
+        
+            body.addEventListener('mouseleave', () => {
+                if (!audio.paused) {
+                    audio.pause();
+                }
+            });
+        });
       </script>
 </body>
 
